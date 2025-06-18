@@ -12,7 +12,7 @@ raw_xml: etree.Element
 raw_table: Mapping[str, Mapping[str, Union[AbstractSet[str], str, int]]] = ...
 
 
-class Currency(enum.Enum):
+class Currency(enum.StrEnum):
 
     @property
     def code(self) -> str: ...
