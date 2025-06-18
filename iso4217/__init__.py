@@ -104,7 +104,7 @@ def update_enum_dict(locals_, raw_table):
         locals_[code] = enumerant
 
 
-class Currency(enum.Enum):
+class Currency(enum.StrEnum):
     """ISO 4217 currency.  Its enumerants are ISO 4217 currencies except for
     some special currencies like ```XXX``.  Enumerants names are lowercase
     cureency code e.g. :attr:`Currency.eur`, :attr:`Currency.usd`.
